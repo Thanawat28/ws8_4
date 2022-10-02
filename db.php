@@ -23,16 +23,13 @@ $stmt->bindParam(1, $value);
 $stmt->execute();
 
 echo "<br>";
-
-$x = 1;
 while ($row = $stmt->fetch())  { 
 echo "ชื่อสมาชิก: ".$row["name"]."<br>";
 echo "ที่อยู่: ".$row["address"]."<br>";
 echo "อีเมลล์: ".$row["email"]."<br>";
 echo "<img src = 'imgws4/$x.jpg'"."<br>";
-$x++;
-echo "<hr>";
 echo "<br>";
+echo "<hr>";
 }
 ?>
 </body>
